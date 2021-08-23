@@ -26,7 +26,7 @@ metaDataFormat= "yaml"
   # Thanks to Christina @ wocintechchat.com for this photo.
   icon = "img/logo.png"
   quote = "A Discord bot with EasyBot.py plugin support and additional features"
-  description= "Discord bots have been present for quite some time, and have been for some time. Rin is designed to be a easy-to-use discord bot that is based off of Chisaku's EasyBot.py project. It is meant as a general-purpose bot, which uses third-party APIs to obtain posts, and content. As of now, it is alpha, and is not ready for production use."
+  description= "Discord bots have been present for quite some time, and have been for some time. Rin is designed to be a easy-to-use discord bot that is based off of Chisaku's EasyBot.py project. It is meant as a general-purpose bot, which uses third-party APIs to obtain posts, and content. As of now, it is alpha, and is not ready for production use. Supports Reddit's API, and others."
   licenseUrl = "https://github.com/No767/Rin/blob/master/LICENSE"
 
  # Social icons
