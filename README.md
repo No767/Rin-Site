@@ -1,2 +1,2 @@
-# Rin-Website
-Rin's Offical Website
+# Rin Site
+This is the official landing page for the rin both
