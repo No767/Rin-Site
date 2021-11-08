@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Mohave";
+    color: white;
+}
+
+.btn {
+    @apply py-2 px-4 font-semibold rounded-lg shadow-md;
+  }
+  .btn-green {
+    @apply text-white bg-green-500 hover:bg-green-700;
+  }
+
+.image {
+    background-image: url('./src/assets/layered-waves-haikei.png');
+}
