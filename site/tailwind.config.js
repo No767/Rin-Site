@@ -2,10 +2,8 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      backgroundImage: {
-        'imagev2': "url('./src/assets/layered-waves-haikei.png)"
-      }
+    fontFamily: {
+      'quicksand': ['Quicksand', 'serif'],
     },
   },
   variants: {
