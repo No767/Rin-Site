@@ -32266,33 +32266,8 @@ section {
   font-family: 'Quicksand', sans-serif;
 }
 
-.grey {
-  background: rgb(104, 104, 104);
-}
-
 .dark {
   background: #001220;
-}
-
-.custom-shape-divider-bottom-1636861787 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1636861787 svg {
-  position: relative;
-  display: block;
-  width: calc(129% + 1.3px);
-  height: 106px;
-}
-
-.custom-shape-divider-bottom-1636861787 .shape-fill {
-  fill: #FFFFFF;
 }
 
 .spacer {
@@ -32303,24 +32278,12 @@ section {
   background-size: cover;
 }
 
-.layer1 {
-  background-image: url('./layer1.svg');
+.wave1{
+  background-image: url('./wave1.svg');
 }
 
-.layer1-v1 {
-  background-image: url('./layer1-v3.svg');
-}
-
-.layer2 {
-  background-image: url('layer2.svg');
-}
-
-.layer1-bottom {
-  background-image: url('./layer1-v3-bottom.svg');
-}
-
-.layer2-bottom {
-  background-image: url('./layer2-bottom.svg');
+.wave2{
+  background-image: url('./wave2.svg');
 }
 
 .material-icons.md-48 {

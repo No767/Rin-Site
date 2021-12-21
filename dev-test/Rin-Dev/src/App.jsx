@@ -1,45 +1,30 @@
 import { useState } from 'react'
-import logo from './logo.svg'
+import logo from './Rin-Logo.webp'
+import { Button, DatePicker } from 'antd';
 import './App.css'
+import "./tailwindcss.css"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>Rin</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+          A Discord Bot focused on obtaining data from third-party
         </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
+        <Button type="primary">PRESS ME</Button>
+        <Button type="primary">Here's another button</Button>
+        <button class="bg-white hover:bg-gray-200 text-black font-semibold py-7 px-20 sm:px-20 rounded-lg shadow-md inline-flex items-center">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@5.10.0/icons/github.svg" height="48" width="48" class="pr-4" alt="GitHub"/>GitHub
+        </button>
       </header>
     </div>
   )
+
 }
 
 export default App
+
