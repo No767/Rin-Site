@@ -39,3 +39,5 @@ npm run build
 ```
 
 As with all React or Vue projects, this site has been bootstrapped with Vite. And note that all of the dependencies like TailwindCSS and React-Dom are already in the `package.json`.
+
+And btw the project deploys to netlify.
