@@ -15,11 +15,15 @@ import CollectionsIcon from '@mui/icons-material/Collections';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import Box from '@mui/material/Box';
+import { SiReact, SiMaterialui, SiTailwindcss } from 'react-icons/si';
 import Container from '@mui/material/Container';
 import Divider from '@mui/material/Divider';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 const navigation = [
-  { name: 'Invite', href: '#', current: false },
+  { name: 'Invite', href: 'https://top.gg/bot/865883525932253184/invite', current: false },
   { name: 'GitHub', href: 'https://github.com/No767/Rin', current: false},
   { name: 'Docs', href: 'https://docs.rinbot.live', current: false },
   { name: 'Status Tracker', href: 'https://status.rinbot.live', current: false }
@@ -29,7 +33,22 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+const theme = createTheme({
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          fontFamily: 'Quicksand',
+        },
+      },
+    },
+  },
+});
 
+function sizeListener() {
+  const matches = useMediaQuery(theme.breakpoints.up('sm'));
+  return matches
+}
 
 function App() {
 
@@ -105,12 +124,14 @@ function App() {
     <p className="text-5xl text-white">Rin</p>
     <p className="text-2xl py-3 text-white">A Discord bot focused on obtaining data from third-party services</p>
     </Stack>
-    <Stack direction="row" spacing={8} justifyContent="center" alignItems="center" pt={6} >
-        <Button variant="contained" href="https://top.gg/bot/865883525932253184/invite" startIcon={<SiDiscord />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>Invite</Button>
-        <Button variant="contained" href="https://github.com/No767/Rin" startIcon={<FaGithub />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>GitHub</Button>
-        <Button variant="contained" href="https://docs.rinbot.live" startIcon={<QuestionMarkIcon />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>Docs</Button>
-        <Button variant="contained" href="https://status.rinbot.live" startIcon={<HiOutlineStatusOnline />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>Status Tracker</Button>
-    </Stack>
+    <ThemeProvider theme={theme}>
+      <Stack direction="row" spacing={8} justifyContent="center" alignItems="center" pt={6} >
+          <Button variant="contained" href="https://top.gg/bot/865883525932253184/invite" startIcon={<SiDiscord />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>Invite</Button>
+          <Button variant="contained" href="https://github.com/No767/Rin" startIcon={<FaGithub />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>GitHub</Button>
+          <Button variant="contained" href="https://docs.rinbot.live" startIcon={<QuestionMarkIcon />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>Docs</Button>
+          <Button variant="contained" href="https://status.rinbot.live" startIcon={<HiOutlineStatusOnline />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>Status Tracker</Button>
+      </Stack>
+    </ThemeProvider>
     <Divider style={{ background: 'white'}} sx={{ mt: 15, mx: 15}}variant="middle" />
     <div className="text-center text-white container mx-auto">
     <Stack spacing={2} alignItems="center" justifyContent="center" pt={15} mx={10}>
@@ -140,13 +161,9 @@ function App() {
       <p className="text-2xl py-3 text-center"> Feel free to submit an issue report on GitHub if you have any ideas, issues, or questions. Note that there is no Discord support server for Rin. If you want more features that Rin doesn't have, like an economy system, check out <Link href="https://github.com/No767/Kumiko" underline="none" color="secondary">Kumiko</Link>, which is a multipurpose version of Rin</p>
     </Stack>
     </div>
-    <Stack spacing={2} alignItems="center" justifyContent="center" pt={10} mx={10}>
+    <Stack spacing={2} alignItems="center" justifyContent="center" pt={10} mx={10} pb={5}>
     <p className="text-md text-white">©2022 No767 - Website Licensed under GPL-3.0</p>
     </Stack>
-    <Stack spacing={2} alignItems="center" justifyContent="center" pt={3} pb={5} mx={10}>
-    <p className="text-md text-white">Built with React, MUI, and TailwindCSS</p>
-    </Stack>
-    
     </div>
   )
 }

@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/src"
+    directory: "/Rin-Site-React"
     schedule:
       interval: "daily"
     commit-message:
