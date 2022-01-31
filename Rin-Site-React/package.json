@@ -4,8 +4,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "cd Rin-Site-React && npx prettier --ignore-path .prettierignore --write . "
   },
+  "pre-commit": [
+    "format"
+  ],
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -23,6 +27,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
+    "pre-commit": "^1.2.2",
+    "prettier": "2.5.1",
     "vite": "^2.7.2"
   }
 }
