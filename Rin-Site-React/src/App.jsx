@@ -14,11 +14,9 @@ import Link from '@mui/material/Link'
 import CollectionsIcon from '@mui/icons-material/Collections';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
-import Box from '@mui/material/Box';
-import { SiReact, SiMaterialui, SiTailwindcss } from 'react-icons/si';
-import Container from '@mui/material/Container';
+import { SiReact, SiMaterialui, SiTailwindcss , SiNetlify } from 'react-icons/si';
 import Divider from '@mui/material/Divider';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, createMuiTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 
@@ -43,12 +41,13 @@ const theme = createTheme({
       },
     },
   },
+  palette: {
+    primary: {
+      main: '#e3e3e3',
+    },
+  },
 });
 
-function sizeListener() {
-  const matches = useMediaQuery(theme.breakpoints.up('sm'));
-  return matches
-}
 
 function App() {
 
@@ -126,10 +125,10 @@ function App() {
     </Stack>
     <ThemeProvider theme={theme}>
       <Stack direction="row" spacing={8} justifyContent="center" alignItems="center" pt={6} >
-          <Button variant="contained" href="https://top.gg/bot/865883525932253184/invite" startIcon={<SiDiscord />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>Invite</Button>
-          <Button variant="contained" href="https://github.com/No767/Rin" startIcon={<FaGithub />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>GitHub</Button>
-          <Button variant="contained" href="https://docs.rinbot.live" startIcon={<QuestionMarkIcon />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>Docs</Button>
-          <Button variant="contained" href="https://status.rinbot.live" startIcon={<HiOutlineStatusOnline />} size="large" sx={{color: 'black', height: 100, width: 300}} style={{ backgroundColor: 'white'}}>Status Tracker</Button>
+          <Button variant="contained" href="https://top.gg/bot/865883525932253184/invite" startIcon={<SiDiscord />} color="primary" size="large" sx={{color: 'black', height: 100, width: 300, backgroundColor: 'white'}}>Invite</Button>
+          <Button variant="contained" href="https://github.com/No767/Rin" startIcon={<FaGithub />} size="large" sx={{color: 'black', height: 100, width: 300, backgroundColor: 'white'}}>GitHub</Button>
+          <Button variant="contained" href="https://docs.rinbot.live" startIcon={<QuestionMarkIcon />} size="large" sx={{color: 'black', height: 100, width: 300, backgroundColor: 'white'}}>Docs</Button>
+          <Button variant="contained" href="https://status.rinbot.live" startIcon={<HiOutlineStatusOnline />} size="large" sx={{color: 'black', height: 100, width: 300, backgroundColor: 'white'}}>Status Tracker</Button>
       </Stack>
     </ThemeProvider>
     <Divider style={{ background: 'white'}} sx={{ mt: 15, mx: 15}}variant="middle" />
@@ -161,8 +160,16 @@ function App() {
       <p className="text-2xl py-3 text-center"> Feel free to submit an issue report on GitHub if you have any ideas, issues, or questions. Note that there is no Discord support server for Rin. If you want more features that Rin doesn't have, like an economy system, check out <Link href="https://github.com/No767/Kumiko" underline="none" color="secondary">Kumiko</Link>, which is a multipurpose version of Rin</p>
     </Stack>
     </div>
-    <Stack spacing={2} alignItems="center" justifyContent="center" pt={10} mx={10} pb={5}>
+    <Stack spacing={2} alignItems="center" justifyContent="center" pt={10} mx={10}>
     <p className="text-md text-white">©2022 No767 - Website Licensed under GPL-3.0</p>
+    </Stack>
+    <Stack spacing={2} alignItems="center" justifyContent="center" pt={5} mx={10}>
+    <p className="text-md text-white">Built with</p>
+    </Stack>
+    <Stack direction="row" spacing={2} alignItems="center" justifyContent="center" pt={1} mx={10} pb={5}  divider={<Divider orientation="vertical" style={{ background: 'white'}} flexItem />}>
+    <SiReact className="text-white"/>
+    <SiMaterialui className="text-white"/>
+    <SiTailwindcss className="text-white"/>
     </Stack>
     </div>
   )
