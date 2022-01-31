@@ -340,7 +340,7 @@ function App() {
         pt={10}
         mx={10}
       >
-        <p className="text-md text-white">
+        <p className="text-md text-white text-center">
           ©2022 No767 - Website Licensed under GPL-3.0
         </p>
       </Stack>
@@ -351,7 +351,7 @@ function App() {
         pt={5}
         mx={10}
       >
-        <p className="text-md text-white">Built with</p>
+        <p className="text-md text-white text-center">Built with</p>
       </Stack>
       <Stack
         direction="row"
