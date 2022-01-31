@@ -18,6 +18,7 @@ import { SiReact, SiMaterialui, SiTailwindcss , SiNetlify } from 'react-icons/si
 import Divider from '@mui/material/Divider';
 import { ThemeProvider, createTheme, createMuiTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 
 const navigation = [
@@ -48,7 +49,17 @@ const theme = createTheme({
   },
 });
 
+function widthChecker() {
+  const theme3 = useTheme();
+  const matches = useMediaQuery(theme3.breakpoints.down('sm'));
+  const smallMatches = useMediaQuery(theme3.breakpoints.down('xs'));
+  if (matches == true || smallMatches == true) {
+    return "column";
+  } else {
+    return "row";
+  }
 
+}
 function App() {
 
   return (
@@ -124,12 +135,12 @@ function App() {
     <p className="text-2xl py-3 text-white">A Discord bot focused on obtaining data from third-party services</p>
     </Stack>
     <ThemeProvider theme={theme}>
-      <Stack direction="row" spacing={8} justifyContent="center" alignItems="center" pt={6} >
-          <Button variant="contained" href="https://top.gg/bot/865883525932253184/invite" startIcon={<SiDiscord />} color="primary" size="large" sx={{color: 'black', height: 100, width: 300, backgroundColor: 'white'}}>Invite</Button>
-          <Button variant="contained" href="https://github.com/No767/Rin" startIcon={<FaGithub />} size="large" sx={{color: 'black', height: 100, width: 300, backgroundColor: 'white'}}>GitHub</Button>
-          <Button variant="contained" href="https://docs.rinbot.live" startIcon={<QuestionMarkIcon />} size="large" sx={{color: 'black', height: 100, width: 300, backgroundColor: 'white'}}>Docs</Button>
-          <Button variant="contained" href="https://status.rinbot.live" startIcon={<HiOutlineStatusOnline />} size="large" sx={{color: 'black', height: 100, width: 300, backgroundColor: 'white'}}>Status Tracker</Button>
-      </Stack>
+    <Stack direction={widthChecker()} spacing={8} justifyContent="center" alignItems="center" pt={6} mx={1.5}>
+          <Button variant="contained" href="https://top.gg/bot/865883525932253184/invite" startIcon={<SiDiscord />} color="primary" size="large" sx={{color: 'black', height: 100, width: 315, backgroundColor: 'white'}}>Invite</Button>
+          <Button variant="contained" href="https://github.com/No767/Rin" startIcon={<FaGithub />} size="large" sx={{color: 'black', height: 100, width: 315, backgroundColor: 'white'}}>GitHub</Button>
+          <Button variant="contained" href="https://docs.rinbot.live" startIcon={<QuestionMarkIcon />} size="large" sx={{color: 'black', height: 100, width: 315, backgroundColor: 'white'}}>Docs</Button>
+          <Button variant="contained" href="https://status.rinbot.live" startIcon={<HiOutlineStatusOnline />} size="large" sx={{color: 'black', height: 100, width: 315, backgroundColor: 'white'}}>Status Tracker</Button>
+    </Stack>
     </ThemeProvider>
     <Divider style={{ background: 'white'}} sx={{ mt: 15, mx: 15}}variant="middle" />
     <div className="text-center text-white container mx-auto">
