@@ -1,6 +1,5 @@
 
 import logo from './images/Rin Logo V4 (GitHub).png'
-import './App.css'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Button from '@mui/material/Button';
@@ -19,7 +18,7 @@ import Divider from '@mui/material/Divider';
 import { ThemeProvider, createTheme, createMuiTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-
+import { motion } from "framer-motion"
 
 const navigation = [
   { name: 'Invite', href: 'https://top.gg/bot/865883525932253184/invite', current: false },
@@ -131,8 +130,8 @@ function App() {
     </Disclosure>
     <Stack spacing={2} alignItems="center" justifyContent="center" pt={10} mx={10}>
     <img src={logo}></img>
-    <p className="text-5xl text-white">Rin</p>
-    <p className="text-2xl py-3 text-white">A Discord bot focused on obtaining data from third-party services</p>
+    <p className="text-5xl text-center text-white">Rin</p>
+    <p className="text-2xl text-center py-3 text-white">A Discord bot focused on obtaining data from third-party services</p>
     </Stack>
     <ThemeProvider theme={theme}>
     <Stack direction={widthChecker()} spacing={8} justifyContent="center" alignItems="center" pt={6} mx={1.5}>
