@@ -2,7 +2,7 @@
 
 # Rin Site
 
-<img src="./images/Rin Logo V4 (GitHub).png">
+<img src="./assets/Rin Logo V4 (GitHub).png">
 
 [![Built with React](https://img.shields.io/badge/Built%20With-React-blue?logo=react)](https://reactjs.org/) [![Netlify Status](https://api.netlify.com/api/v1/badges/ec914af8-b447-481c-b83f-f9d6a0759fa6/deploy-status)](https://app.netlify.com/sites/rinbot/deploys) ![Website](https://img.shields.io/website?down_color=red&down_message=Offline&label=Website&logo=netlify&up_message=Online&url=https%3A%2F%2Frinbot.live) ![GitHub](https://img.shields.io/github/license/No767/Rin-Site?label=License&logo=github)
 
