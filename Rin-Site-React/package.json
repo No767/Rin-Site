@@ -5,11 +5,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "format": "cd Rin-Site-React && npx prettier --ignore-path .prettierignore --write . "
+    "format": "npx prettier --ignore-path .prettierignore --write . "
   },
-  "pre-commit": [
-    "format"
-  ],
+  "pre-commit": {
+    "pre-commit-format": "format"
+  },
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
