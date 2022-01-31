@@ -15,8 +15,6 @@ The Official Landing Site for [Rin](https://github.com/No767/Rin)
 Dependencies:
 
 - [Node.js](https://nodejs.org/en/)
-- [React](https://reactjs.org)
-- Some type of IDE. This site was mainly developed with VS Code and WebStorm.
 
 ## React
 
@@ -38,6 +36,4 @@ Building Files for Production:
 npm run build
 ```
 
-As with all React or Vue projects, this site has been bootstrapped with Vite. And note that all of the dependencies like TailwindCSS and React-Dom are already in the `package.json`.
-
-And btw the project deploys to netlify.
+As with all React or Vue projects, this site has been bootstrapped with Vite. And note that all of the dependencies like TailwindCSS and React are already in the `package.json`.
