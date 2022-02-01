@@ -1,11 +1,10 @@
+import "./index.css";
 import logo from "./images/Rin Logo V4 (GitHub).png";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Button from "@mui/material/Button";
 import { FaGithub } from "react-icons/fa";
-import { SiDiscord } from "react-icons/si";
 import { HiOutlineStatusOnline } from "react-icons/hi";
-import "./index.css";
 import Stack from "@mui/material/Stack";
 import SpeedIcon from "@mui/icons-material/Speed";
 import Link from "@mui/material/Link";
@@ -16,16 +15,15 @@ import {
   SiReact,
   SiMaterialui,
   SiTailwindcss,
-  SiNetlify,
+  SiDiscord
 } from "react-icons/si";
 import Divider from "@mui/material/Divider";
 import {
   ThemeProvider,
   createTheme,
-  createMuiTheme,
+  useTheme
 } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTheme } from "@mui/material/styles";
 import { motion } from "framer-motion";
 
 const navigation = [
@@ -153,11 +151,17 @@ function App() {
         pt={10}
         mx={10}
       >
+        <motion.div animate={{ y: [-100, 0], opacity: [0, 1] }} transition={{ y: {type: "spring"}, duration: 2 }} viewport={{ once: true }}>
         <img src={logo}></img>
+        </motion.div>
+        <motion.div animate={{ y: [-125, 0], opacity: [0, 1]}} transition={{ y: {type: "spring"}, duration: 2 }} viewport={{ once: true }}>
         <p className="text-5xl text-center text-white">Rin</p>
+        </motion.div>
+        <motion.div animate={{ y: [-150, 0], opacity: [0, 1]}} transition={{ y: {type: "spring"}, duration: 2 }} viewport={{ once: true }}>
         <p className="text-2xl text-center py-3 text-white">
           A Discord bot focused on obtaining data from third-party services
         </p>
+        </motion.div>
       </Stack>
       <ThemeProvider theme={theme}>
         <Stack
@@ -168,6 +172,7 @@ function App() {
           pt={6}
           mx={1.5}
         >
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} animate={{ y: [-100, 0], opacity: [0, 1] }} transition={{ y: {type: "spring"}, duration: 2.5 }} viewport={{ once: true }}>
           <Button
             variant="contained"
             href="https://top.gg/bot/865883525932253184/invite"
@@ -183,6 +188,8 @@ function App() {
           >
             Invite
           </Button>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} animate={{ y: [-100, 0], opacity: [0, 1] }} transition={{ y: {type: "spring"}, duration: 2.5 }} viewport={{ once: true }}>
           <Button
             variant="contained"
             href="https://github.com/No767/Rin"
@@ -197,6 +204,8 @@ function App() {
           >
             GitHub
           </Button>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} animate={{ y: [-100, 0], opacity: [0, 1] }} transition={{ y: {type: "spring"}, duration: 2.5 }} viewport={{ once: true }}>
           <Button
             variant="contained"
             href="https://docs.rinbot.live"
@@ -211,6 +220,8 @@ function App() {
           >
             Docs
           </Button>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} animate={{ y: [-100, 0], opacity: [0, 1] }} transition={{ y: {type: "spring"}, duration: 2.5}} viewport={{ once: true }}>
           <Button
             variant="contained"
             href="https://status.rinbot.live"
@@ -225,13 +236,16 @@ function App() {
           >
             Status Tracker
           </Button>
+          </motion.div>
         </Stack>
       </ThemeProvider>
+      <motion.div animate={{ y: [-50, 0], opacity: [0, 1] }} transition={{ y: {type: "spring"}, duration: 2 , ease: "easeOut"}} viewport={{ once: true }}>
       <Divider
         style={{ background: "white" }}
         sx={{ mt: 15, mx: 15 }}
         variant="middle"
       />
+      </motion.div>
       <div className="text-center text-white container mx-auto">
         <Stack
           spacing={2}
@@ -242,7 +256,7 @@ function App() {
         >
           <CollectionsIcon sx={{ fontSize: 175 }} />
           <p className="text-4xl pt-4 text-center text-white">
-            A Wide Collection of Services Supported{" "}
+            A Wide Collection of Services Supported
           </p>
           <p className="text-2xl py-3 text-center">
             Rin supports a wide variety of services, allowing to obtain data
@@ -252,6 +266,7 @@ function App() {
             MangaDex, YouTube, and many more. More will be added, such as Kitsu,
             Twitch, and CurseForge integration
           </p>
+
         </Stack>
       </div>
       <div className="text-center text-white container mx-auto">
