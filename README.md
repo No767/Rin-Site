@@ -24,7 +24,7 @@ Installing Dependencies:
 cd Rin-Site-React && npm install
 ```
 
-Opening up the dev server: 
+Opening up the dev server:
 
 ```sh
 npm run dev
