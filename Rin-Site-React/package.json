@@ -8,11 +8,6 @@
     "format": "npx prettier --ignore-path .prettierignore --write .",
     "check": "npx prettier --ignore-path .prettierignore --check ."
   },
-  "husky": {
-    "hooks": {
-      "Format": "echo '[Husky] Running Format Pre-Commit Hook' && npx prettier --ignore-path .prettierignore --write . && git add --all"
-    }
-  },
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
