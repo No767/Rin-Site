@@ -4,17 +4,17 @@ on:
     branches:
       - master
   schedule:
-    - cron: '36 7 * * 0'
+    - cron: "36 7 * * 0"
 jobs:
   Analyze:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository  
+      - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Set up Node.js 17
         uses: actions/setup-node@v2
         with:
-          node-version: '17'
+          node-version: "17"
       - name: Install Snyk CLI
         run: |
           npm install snyk@latest -g
