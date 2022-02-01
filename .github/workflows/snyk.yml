@@ -34,9 +34,11 @@ jobs:
       - name: Auth with Snyk
         run: |
           snyk auth ${{ secrets.SNYK_TOKEN }}
+      - name: Change Into Project directory
+        run: |
+          cd Rin-Site-React
       - name: Run Snyk
         uses: snyk/actions/node@master
-        run: cd Rin-Site-React
         continue-on-error: true
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
