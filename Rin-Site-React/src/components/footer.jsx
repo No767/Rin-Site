@@ -38,6 +38,7 @@ export function Footer({}) {
         pt={1}
         mx={10}
         pb={5}
+        sx={{ color: "#FFFFFF" }}
         divider={
           <Divider
             orientation="vertical"
@@ -48,8 +49,8 @@ export function Footer({}) {
           />
         }
       >
-        <SiReact className="text-white" />
-        <SiMaterialui className="text-white" />
+        <SiReact />
+        <SiMaterialui />
       </Stack>
     </>
   );
