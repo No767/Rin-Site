@@ -5,39 +5,63 @@ import { HiOutlineStatusOnline } from "react-icons/hi";
 import Stack from "@mui/material/Stack";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { SiDiscord } from "react-icons/si";
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
 
 export function Navbar({}) {
-  return <AppBar position="static" style={{
-    background: '#202731'
-  }}>
-          <Stack direction="row" justifyContent="center" alignItems="center">
-            <Toolbar>
-          <IconButton size="large" edge="start" LinkComponent="a" href="https://top.gg/bot/865883525932253184/invite" sx={{
-          px: 3
-        }}>
+  return (
+    <AppBar
+      position="static"
+      style={{
+        background: "#202731",
+      }}
+    >
+      <Stack direction="row" justifyContent="center" alignItems="center">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            LinkComponent="a"
+            href="https://top.gg/bot/865883525932253184/invite"
+            sx={{
+              px: 3,
+            }}
+          >
             <SiDiscord />
           </IconButton>
-          <IconButton size="large" LinkComponent="a" href="https://github.com/No767/Rin" sx={{
-          px: 3
-        }}>
+          <IconButton
+            size="large"
+            LinkComponent="a"
+            href="https://github.com/No767/Rin"
+            sx={{
+              px: 3,
+            }}
+          >
             <GitHubIcon />
           </IconButton>
-          <IconButton size="large" LinkComponent="a" href="https://docs.rinbot.live" sx={{
-          px: 3
-        }}>
+          <IconButton
+            size="large"
+            LinkComponent="a"
+            href="https://docs.rinbot.live"
+            sx={{
+              px: 3,
+            }}
+          >
             <FaQuestion />
           </IconButton>
-          <IconButton size="large" LinkComponent="a" href="https://status.rinbot.live" sx={{
-          px: 3
-        }}>
+          <IconButton
+            size="large"
+            LinkComponent="a"
+            href="https://status.rinbot.live"
+            sx={{
+              px: 3,
+            }}
+          >
             <HiOutlineStatusOnline />
           </IconButton>
-          </Toolbar>
-        </Stack>
-      
-      </AppBar>;
+        </Toolbar>
+      </Stack>
+    </AppBar>
+  );
 }
-  

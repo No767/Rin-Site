@@ -1,7 +1,7 @@
-import { Navbar } from './components/navbar';
-import { Footer } from './components/footer';
-import { Showcase } from './components/showcase';
-import { Body } from './components/body';
+import { Navbar } from "./components/navbar";
+import { Footer } from "./components/footer";
+import { Showcase } from "./components/showcase";
+import { Body } from "./components/body";
 import "./index.css";
 import logo from "./images/Rin Logo V4 (GitHub).png";
 import { ThemeProvider, createTheme, useTheme } from "@mui/material/styles";
@@ -26,11 +26,11 @@ const theme = createTheme({
 
 const darkTheme = createTheme({
   palette: {
-    mode: 'dark'
+    mode: "dark",
   },
   typography: {
     fontFamily: "Quicksand",
-  }
+  },
 });
 
 function widthChecker() {
@@ -45,21 +45,16 @@ function widthChecker() {
   }
 }
 
-
 function App() {
-
-
   return (
-    
     <div className="App">
       <ThemeProvider theme={darkTheme}>
-      <Navbar     />
-      <Showcase   logo={logo} theme={theme} widthChecker={widthChecker}  />
-      <Body     />
-      <Footer     />
+        <Navbar />
+        <Showcase logo={logo} theme={theme} widthChecker={widthChecker} />
+        <Body />
+        <Footer />
       </ThemeProvider>
     </div>
-    
   );
 }
 
