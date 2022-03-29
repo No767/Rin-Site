@@ -36,4 +36,4 @@ Building Files for Production:
 npm run build
 ```
 
-This project has been bootstrapped with Vite. 
+This project has been bootstrapped with Vite.
