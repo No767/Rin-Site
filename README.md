@@ -36,4 +36,4 @@ Building Files for Production:
 npm run build
 ```
 
-As with all React or Vue projects, this site has been bootstrapped with Vite. And note that all of the dependencies like TailwindCSS and React are already in the `package.json`.
+This project has been bootstrapped with Vite. 
