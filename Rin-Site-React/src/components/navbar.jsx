@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaQuestion } from "react-icons/fa";
+import { FaQuestion, FaTerminal } from "react-icons/fa";
 import { HiOutlineStatusOnline } from "react-icons/hi";
 import Stack from "@mui/material/Stack";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -8,17 +8,19 @@ import { SiDiscord } from "react-icons/si";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
+import Tooltip from '@mui/material/Tooltip';
 
 export function Navbar({}) {
   return (
     <AppBar
-      position="static"
+      position="fixed"
       style={{
         background: "#202731",
       }}
     >
       <Stack direction="row" justifyContent="center" alignItems="center">
-        <Toolbar>
+        <Toolbar disableGutters="true" variant="dense" >
+          <Tooltip title="Invite">
           <IconButton
             size="large"
             edge="start"
@@ -30,6 +32,8 @@ export function Navbar({}) {
           >
             <SiDiscord />
           </IconButton>
+          </Tooltip>
+          <Tooltip title="GitHub">
           <IconButton
             size="large"
             LinkComponent="a"
@@ -40,6 +44,8 @@ export function Navbar({}) {
           >
             <GitHubIcon />
           </IconButton>
+          </Tooltip>
+          <Tooltip title="Docs">
           <IconButton
             size="large"
             LinkComponent="a"
@@ -50,6 +56,20 @@ export function Navbar({}) {
           >
             <FaQuestion />
           </IconButton>
+          </Tooltip>
+          <Tooltip title="Commands">
+          <IconButton
+            size="large"
+            LinkComponent="a"
+            href="/commands"
+            sx={{
+              px: 3,
+            }}
+          >
+            <FaTerminal />
+          </IconButton>
+          </Tooltip>
+          <Tooltip title="Status">
           <IconButton
             size="large"
             LinkComponent="a"
@@ -60,8 +80,10 @@ export function Navbar({}) {
           >
             <HiOutlineStatusOnline />
           </IconButton>
+          </Tooltip>
         </Toolbar>
       </Stack>
     </AppBar>
+    
   );
 }

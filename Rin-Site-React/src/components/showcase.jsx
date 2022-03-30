@@ -11,7 +11,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { motion } from "framer-motion";
 import Typography from "@mui/material/Typography";
 
-export function Showcase({ logo, theme, widthChecker }) {
+export function Showcase({ logo, theme}) {
   return (
     <>
       <Stack
@@ -80,7 +80,7 @@ export function Showcase({ logo, theme, widthChecker }) {
       </Stack>
       <ThemeProvider theme={theme}>
         <Stack
-          direction={widthChecker()}
+          direction={{ xs: "column", sm: "column", md: "column", lg: "column", xl: "row" }}
           spacing={8}
           justifyContent="center"
           alignItems="center"
