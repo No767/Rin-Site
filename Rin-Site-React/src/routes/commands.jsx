@@ -1,4 +1,4 @@
-import { Body } from './commands-components/body';
+import { Body } from "./commands-components/body";
 import React from "react";
 import { Navbar } from "../components/navbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -10,7 +10,7 @@ export default function Commands() {
       mode: "dark",
       primary: {
         main: "#FFFFFF",
-      }
+      },
     },
     typography: {
       fontFamily: "Quicksand",
@@ -21,7 +21,7 @@ export default function Commands() {
     <body>
       <ThemeProvider theme={darkTheme}>
         <Navbar />
-        <Body     />
+        <Body />
       </ThemeProvider>
     </body>
   );
