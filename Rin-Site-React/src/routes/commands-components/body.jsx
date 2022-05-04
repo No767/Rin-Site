@@ -15,10 +15,10 @@ export function Body({}) {
       justifyContent="center"
       alignItems="center"
     >
-      <Typography variant="h3" color="common.white" pt={5}>
+      <Typography variant="h3" color="common.white" pt={5} align="center">
         Commands
       </Typography>
-      <Typography variant="body" className="text-white">
+      <Typography variant="body" className="text-white" align="center">
         All of the commands can be found{" "}
         <Link
           href="https://docs.rinbot.live/docs/commands/rin-commands"
@@ -29,7 +29,7 @@ export function Body({}) {
           here
         </Link>
       </Typography>
-      <Typography variant="body" color="common.white">
+      <Typography variant="body" color="common.white" align="center">
         Or you want a more up to date version, use either /rinhelp or /help.
         Both will provide the commands as well.
       </Typography>
