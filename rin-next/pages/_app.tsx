@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         primaryColor: "rinSite",
         primaryShade: 0,
         fontSizes: {
-          xl: 30,
+          xl: 50,
           lg: 25,
         },
         breakpoints: {

@@ -14,7 +14,6 @@ import { MdInfoOutline } from "react-icons/md";
 import { SiGithub, SiDiscord } from "react-icons/si";
 import { FiTerminal } from "react-icons/fi";
 import { motion } from "framer-motion";
-import "../../styles/globals.css";
 
 export const Showcase: FC = () => {
   return (
@@ -66,7 +65,7 @@ export const Showcase: FC = () => {
             once: true,
           }}
         >
-          <Text className="titleHeader" align="center">
+          <Text size="xl" align="center">
             Rin
           </Text>
         </motion.div>
@@ -86,7 +85,7 @@ export const Showcase: FC = () => {
             once: true,
           }}
         >
-          <Text className="titleDescription" align="center">
+          <Text size="lg" align="center">
             A Discord bot focused on obtaining data from third-party services
             with lighting performance in mind
           </Text>
@@ -125,7 +124,7 @@ export const Showcase: FC = () => {
             >
               <Button
                 variant="outline"
-                size="xl"
+                size="lg"
                 radius="lg"
                 styles={{ label: { color: "white" } }}
                 leftIcon={<SiDiscord />}
@@ -165,7 +164,7 @@ export const Showcase: FC = () => {
             >
               <Button
                 variant="outline"
-                size="xl"
+                size="lg"
                 radius="lg"
                 component={NextLink}
                 href="https://github.com/No767/Rin"
@@ -206,7 +205,7 @@ export const Showcase: FC = () => {
             >
               <Button
                 variant="outline"
-                size="xl"
+                size="lg"
                 radius="lg"
                 component={NextLink}
                 href="https://docs.rinbot.live"
@@ -247,7 +246,7 @@ export const Showcase: FC = () => {
             >
               <Button
                 variant="outline"
-                size="xl"
+                size="lg"
                 radius="lg"
                 component={NextLink}
                 href="/commands"
@@ -298,7 +297,7 @@ export const Showcase: FC = () => {
             >
               <Button
                 variant="outline"
-                size="xl"
+                size="lg"
                 radius="lg"
                 styles={{ label: { color: "white" } }}
                 leftIcon={<SiDiscord />}
@@ -338,7 +337,7 @@ export const Showcase: FC = () => {
             >
               <Button
                 variant="outline"
-                size="xl"
+                size="lg"
                 radius="lg"
                 component={NextLink}
                 href="https://github.com/No767/Rin"
@@ -379,7 +378,7 @@ export const Showcase: FC = () => {
             >
               <Button
                 variant="outline"
-                size="xl"
+                size="lg"
                 radius="lg"
                 component={NextLink}
                 href="https://docs.rinbot.live"
@@ -420,7 +419,7 @@ export const Showcase: FC = () => {
             >
               <Button
                 variant="outline"
-                size="xl"
+                size="lg"
                 radius="lg"
                 component={NextLink}
                 href="/commands"

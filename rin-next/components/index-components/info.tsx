@@ -7,7 +7,6 @@ import { FaWrench } from "react-icons/fa";
 
 import { MdOutlineCollections } from "react-icons/md";
 import { motion, Variants } from "framer-motion";
-import "../../styles/globals.css";
 
 const mainVariants: Variants = {
   offscreen: {
@@ -43,7 +42,7 @@ export const Info: FC = () => {
           sx={{ color: "#FFFFFF" }}
           mx={50}
         >
-          <MdOutlineCollections className="iconSize" />
+          <MdOutlineCollections size={175} />
           <Title order={1} align="center">
             A Wide Amount of Integrations
           </Title>
@@ -78,7 +77,7 @@ export const Info: FC = () => {
           sx={{ color: "#FFFFFF" }}
           mx={50}
         >
-          <FaWrench className="iconSize" />
+          <FaWrench size={175} />
           <Title order={1} align="center">
             Modular By Design
           </Title>
@@ -120,7 +119,7 @@ export const Info: FC = () => {
           sx={{ color: "#FFFFFF" }}
           mx={50}
         >
-          <MdSpeed className="iconSize" />
+          <MdSpeed size={175} />
           <Title order={1} align="center">
             Built with Blazing Fast Performance
           </Title>
@@ -173,7 +172,7 @@ export const Info: FC = () => {
           sx={{ color: "#FFFFFF" }}
           mx={50}
         >
-          <SiGithub className="iconSize" />
+          <SiGithub size={175} />
           <Title order={1} align="center">
             Completely Free and Open Source
           </Title>
