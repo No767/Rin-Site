@@ -1,0 +1,17 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.titleHeader {
+  font-size: 50px;
+}
+
+.titleDescription {
+  font-size: 25px;
+}
+
+.iconSize {
+  font-size: 175px;
+}

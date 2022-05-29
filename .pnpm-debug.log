@@ -1,0 +1,23 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: prettier",
+      "code": "ENOENT",
+      "stack": "Error: not found: prettier\n    at getNotFoundError (D:\\Program-Files\\NVM-Windows\\nvm\\v16.15.0\\node_modules\\pnpm\\dist\\pnpm.cjs:41702:51)\n    at Function.whichSync [as sync] (D:\\Program-Files\\NVM-Windows\\nvm\\v16.15.0\\node_modules\\pnpm\\dist\\pnpm.cjs:41779:13)\n    at getCommandAbsolutePathSync (D:\\Program-Files\\NVM-Windows\\nvm\\v16.15.0\\node_modules\\pnpm\\dist\\pnpm.cjs:43344:44)\n    at default_1 (D:\\Program-Files\\NVM-Windows\\nvm\\v16.15.0\\node_modules\\pnpm\\dist\\pnpm.cjs:43353:32)\n    at D:\\Program-Files\\NVM-Windows\\nvm\\v16.15.0\\node_modules\\pnpm\\dist\\pnpm.cjs:178377:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "D:\\GitHub Repos [Local]\\Rin-Site",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: prettier",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: prettier\n    at getNotFoundError (D:\\Program-Files\\NVM-Windows\\nvm\\v16.15.0\\node_modules\\pnpm\\dist\\pnpm.cjs:41702:51)\n    at Function.whichSync [as sync] (D:\\Program-Files\\NVM-Windows\\nvm\\v16.15.0\\node_modules\\pnpm\\dist\\pnpm.cjs:41779:13)\n    at getCommandAbsolutePathSync (D:\\Program-Files\\NVM-Windows\\nvm\\v16.15.0\\node_modules\\pnpm\\dist\\pnpm.cjs:43344:44)\n    at default_1 (D:\\Program-Files\\NVM-Windows\\nvm\\v16.15.0\\node_modules\\pnpm\\dist\\pnpm.cjs:43353:32)\n    at D:\\Program-Files\\NVM-Windows\\nvm\\v16.15.0\\node_modules\\pnpm\\dist\\pnpm.cjs:178377:39"
+    }
+  }
+}
