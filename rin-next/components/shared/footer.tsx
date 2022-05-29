@@ -15,7 +15,7 @@ export const Footer: FC = () => {
         sx={{ color: "#FFFFFF" }}
         mx={50}
       >
-                <motion.div
+        <motion.div
           animate={{
             y: [-100, 0],
             opacity: [0, 1],
@@ -25,13 +25,15 @@ export const Footer: FC = () => {
               type: "spring",
             },
             duration: 2,
-            delay: 0.1
+            delay: 0.1,
           }}
           viewport={{
             once: true,
           }}
         >
-        <Text align="center">©2022 No767 - Website Licensed under GPL-3.0</Text>
+          <Text align="center">
+            ©2022 No767 - Website Licensed under GPL-3.0
+          </Text>
         </motion.div>
       </Stack>
       <Stack
@@ -53,50 +55,50 @@ export const Footer: FC = () => {
               type: "spring",
             },
             duration: 2,
-            delay: 0.2
+            delay: 0.2,
           }}
           viewport={{
             once: true,
           }}
         >
-        <Text align="center">Website Built With</Text>
+          <Text align="center">Website Built With</Text>
         </motion.div>
         <Group direction="row">
-        <motion.div
-          animate={{
-            y: [-100, 0],
-            opacity: [0, 1],
-          }}
-          transition={{
-            y: {
-              type: "spring",
-            },
-            duration: 2,
-            delay: 0.3
-          }}
-          viewport={{
-            once: true,
-          }}
-        >
-          <SiNextdotjs />
+          <motion.div
+            animate={{
+              y: [-100, 0],
+              opacity: [0, 1],
+            }}
+            transition={{
+              y: {
+                type: "spring",
+              },
+              duration: 2,
+              delay: 0.3,
+            }}
+            viewport={{
+              once: true,
+            }}
+          >
+            <SiNextdotjs />
           </motion.div>
           <motion.div
-          animate={{
-            y: [-100, 0],
-            opacity: [0, 1],
-          }}
-          transition={{
-            y: {
-              type: "spring",
-            },
-            duration: 2,
-            delay: 0.4
-          }}
-          viewport={{
-            once: true,
-          }}
-        >
-          <AiOutlineHeart />
+            animate={{
+              y: [-100, 0],
+              opacity: [0, 1],
+            }}
+            transition={{
+              y: {
+                type: "spring",
+              },
+              duration: 2,
+              delay: 0.4,
+            }}
+            viewport={{
+              once: true,
+            }}
+          >
+            <AiOutlineHeart />
           </motion.div>
         </Group>
       </Stack>

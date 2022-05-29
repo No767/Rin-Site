@@ -29,9 +29,9 @@ export const CommandsBody: FC = () => {
             once: true,
           }}
         >
-        <Title order={1} align="center">
-          Commands
-        </Title>
+          <Title order={1} align="center">
+            Commands
+          </Title>
         </motion.div>
         <motion.div
           animate={{
@@ -43,25 +43,25 @@ export const CommandsBody: FC = () => {
               type: "spring",
             },
             duration: 2,
-            delay: 0.1
+            delay: 0.1,
           }}
           viewport={{
             once: true,
           }}
         >
-        <Text size="lg" align="center" pb={100}>
-          Rin&apos;s commands can be found{" "}
-          <Anchor
-            component={NextLink}
-            href="https://docs.rinbot.live/docs/commands/rin-commands"
-            target="_blank"
-            color="pink"
-            size="lg"
-          >
-            here
-          </Anchor>
-          . Rin offers 80+ commands for you to enjoy and use.
-        </Text>
+          <Text size="lg" align="center" pb={100}>
+            Rin&apos;s commands can be found{" "}
+            <Anchor
+              component={NextLink}
+              href="https://docs.rinbot.live/docs/commands/rin-commands"
+              target="_blank"
+              color="pink"
+              size="lg"
+            >
+              here
+            </Anchor>
+            . Rin offers 80+ commands for you to enjoy and use.
+          </Text>
         </motion.div>
       </Stack>
     </>
