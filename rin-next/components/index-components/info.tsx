@@ -6,10 +6,35 @@ import { SiGithub } from "react-icons/si";
 import { FaWrench } from "react-icons/fa";
 
 import { MdOutlineCollections } from "react-icons/md";
+import { motion, Variants} from "framer-motion";
+
+const mainVariants: Variants = {
+
+    offscreen: {
+      y: 0
+    },
+    onscreen: {
+        y: [-100, 0],
+        opacity: [0, 1],
+    }
+  };
 
 export const Info: FC = () => {
   return (
     <>
+    <motion.div
+      variants={mainVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+      transition={{
+        y: {
+          type: "spring",
+        },
+        duration: 2,
+        delay: 0.1
+      }}
+      viewport={{ once: true }}
+    >
       <Stack
         align="center"
         justify="center"
@@ -18,6 +43,7 @@ export const Info: FC = () => {
         sx={{ color: "#FFFFFF" }}
         mx={50}
       >
+        
         <MdOutlineCollections className="iconSize" />
         <Title order={1} align="center">
           A Wide Amount of Integrations
@@ -30,7 +56,22 @@ export const Info: FC = () => {
           YouTube, Modrinth and many more. More will be added, such as Kitsu,
           Twitch, AniList, Spotify, and many others
         </Text>
+
       </Stack>
+      </motion.div>
+      <motion.div
+      variants={mainVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+      transition={{
+        y: {
+          type: "spring",
+        },
+        duration: 2,
+        delay: 0.2
+      }}
+      viewport={{ once: true }}
+    >
       <Stack
         align="center"
         justify="center"
@@ -39,6 +80,7 @@ export const Info: FC = () => {
         sx={{ color: "#FFFFFF" }}
         mx={50}
       >
+
         <FaWrench className="iconSize" />
         <Title order={1} align="center">
           Modular By Design
@@ -58,7 +100,22 @@ export const Info: FC = () => {
           is designed to serve more features than Rin, including a fully opt-in
           economy, and much much more
         </Text>
+        
       </Stack>
+      </motion.div>
+      <motion.div
+      variants={mainVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+      transition={{
+        y: {
+          type: "spring",
+        },
+        duration: 2,
+        delay: 0.3
+      }}
+      viewport={{ once: true }}
+    >
       <Stack
         align="center"
         justify="center"
@@ -67,6 +124,7 @@ export const Info: FC = () => {
         sx={{ color: "#FFFFFF" }}
         mx={50}
       >
+
         <MdSpeed className="iconSize" />
         <Title order={1} align="center">
           Built with Blazing Fast Performance
@@ -97,7 +155,22 @@ export const Info: FC = () => {
           , thus resulting in performance faster than most bots written in Node
           and on-par with bots written in Go
         </Text>
+        
       </Stack>
+      </motion.div>
+      <motion.div
+      variants={mainVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+      transition={{
+        y: {
+          type: "spring",
+        },
+        duration: 2,
+        delay: 0.4
+      }}
+      viewport={{ once: true }}
+    >
       <Stack
         align="center"
         justify="center"
@@ -106,6 +179,7 @@ export const Info: FC = () => {
         sx={{ color: "#FFFFFF" }}
         mx={50}
       >
+        
         <SiGithub className="iconSize" />
         <Title order={1} align="center">
           Completely Free and Open Source
@@ -116,7 +190,9 @@ export const Info: FC = () => {
           end user or developer, will be able to have access to these services
           for free. Rin will always stay free and open source.
         </Text>
+        
       </Stack>
+      </motion.div>
     </>
   );
 };

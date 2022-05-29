@@ -13,6 +13,7 @@ import {
 import { MdInfoOutline } from "react-icons/md";
 import { SiGithub, SiDiscord } from "react-icons/si";
 import { FiTerminal } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export const Showcase: FC = () => {
   return (
@@ -25,6 +26,21 @@ export const Showcase: FC = () => {
         sx={{ color: "#FFFFFF" }}
         mx={50}
       >
+        <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
         <Image
           radius="md"
           src="https://raw.githubusercontent.com/No767/Rin-Site/master/Rin-Site-React/src/images/Rin%20Logo%20V4%20(GitHub).png"
@@ -32,13 +48,48 @@ export const Showcase: FC = () => {
           width={256}
           height={256}
         />
+        </motion.div>
+        <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.1
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
         <Text className="titleHeader" align="center">
           Rin
         </Text>
+        </motion.div>
+        <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.2
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
         <Text className="titleDescription" align="center">
           A Discord bot focused on obtaining data from third-party services with
           lighting performance in mind
         </Text>
+        </motion.div>
         <MediaQuery largerThan="xl" styles={{ display: "none" }}>
           <Group
             direction="column"
@@ -47,6 +98,30 @@ export const Showcase: FC = () => {
             pt={15}
             spacing="lg"
           >
+                    <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          whileHover={{
+            scale: 1.1,
+            transition: { type: "spring", duration: 0.7 }
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {type: "spring", duration: 0.7 }
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.3
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
             <Button
               variant="outline"
               size="xl"
@@ -62,6 +137,31 @@ export const Showcase: FC = () => {
             >
               Invite
             </Button>
+            </motion.div>
+            <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          whileHover={{
+            scale: 1.1,
+            transition: { type: "spring", duration: 0.7 }
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {type: "spring", duration: 0.7 }
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.4
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
             <Button
               variant="outline"
               size="xl"
@@ -78,6 +178,31 @@ export const Showcase: FC = () => {
             >
               GitHub
             </Button>
+            </motion.div>
+            <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          whileHover={{
+            scale: 1.1,
+            transition: { type: "spring", duration: 0.7 }
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {type: "spring", duration: 0.7 }
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.5
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
             <Button
               variant="outline"
               size="xl"
@@ -94,7 +219,31 @@ export const Showcase: FC = () => {
             >
               Docs
             </Button>
-
+            </motion.div>
+            <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          whileHover={{
+            scale: 1.1,
+            transition: { type: "spring", duration: 0.7 }
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {type: "spring", duration: 0.7 }
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.6
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
             <Button
               variant="outline"
               size="xl"
@@ -111,6 +260,7 @@ export const Showcase: FC = () => {
             >
               Commands
             </Button>
+            </motion.div>
           </Group>
         </MediaQuery>
         <MediaQuery smallerThan="xl" styles={{ display: "none" }}>
@@ -121,6 +271,30 @@ export const Showcase: FC = () => {
             pt={15}
             spacing="lg"
           >
+                                <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          whileHover={{
+            scale: 1.1,
+            transition: { type: "spring", duration: 0.7 }
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {type: "spring", duration: 0.7 }
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.3
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
             <Button
               variant="outline"
               size="xl"
@@ -136,6 +310,30 @@ export const Showcase: FC = () => {
             >
               Invite
             </Button>
+            </motion.div>
+            <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}          whileHover={{
+            scale: 1.1,
+            transition: { type: "spring", duration: 0.7 }
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {type: "spring", duration: 0.7 }
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.4
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
             <Button
               variant="outline"
               size="xl"
@@ -152,6 +350,31 @@ export const Showcase: FC = () => {
             >
               GitHub
             </Button>
+            </motion.div>
+            <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          whileHover={{
+            scale: 1.1,
+            transition: { type: "spring", duration: 0.7 }
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {type: "spring", duration: 0.7 }
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.5
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
             <Button
               variant="outline"
               size="xl"
@@ -168,7 +391,31 @@ export const Showcase: FC = () => {
             >
               Docs
             </Button>
-
+            </motion.div>
+            <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          whileHover={{
+            scale: 1.1,
+            transition: { type: "spring", duration: 0.7 }
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {type: "spring", duration: 0.7 }
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.6
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
             <Button
               variant="outline"
               size="xl"
@@ -185,10 +432,28 @@ export const Showcase: FC = () => {
             >
               Commands
             </Button>
+            </motion.div>
           </Group>
         </MediaQuery>
       </Stack>
-      <Divider my={50} mx={100} sx={{ color: "#FFFFFF" }} />
+      <motion.div
+          animate={{
+            y: [-100, 0],
+            opacity: [0, 1],
+          }}
+          transition={{
+            y: {
+              type: "spring",
+            },
+            duration: 2,
+            delay: 0.7
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
+      <Divider my={50} mx={100} sx={{ color: "#FFFFFF" }} /></motion.div>
+
     </>
   );
 };

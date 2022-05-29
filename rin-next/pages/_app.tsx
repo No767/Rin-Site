@@ -37,6 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         },
       }}
       withGlobalStyles
+      withNormalizeCSS
     >
       <Component {...pageProps} />
     </MantineProvider>
