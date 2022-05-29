@@ -12,6 +12,7 @@ specifiers:
   framer-motion: ^6.3.4
   husky: ^8.0.1
   next: 12.1.6
+  next-seo: ^5.4.0
   prettier: ^2.6.2
   react: 18.1.0
   react-dom: 18.1.0
@@ -24,6 +25,7 @@ dependencies:
   "@mantine/next": 4.2.6_2g4afw7tic4g2gmzvdccsh7i3y
   framer-motion: 6.3.4_ef5jwxihqo6n7gxfmzogljlgcm
   next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
+  next-seo: 5.4.0_2mgcgz5qhsdxw4fgpqzqeafmkq
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   react-icons: 4.3.1_react@18.1.0
@@ -2370,6 +2372,21 @@ packages:
   /natural-compare/1.4.0:
     resolution: { integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc= }
     dev: true
+
+  /next-seo/5.4.0_2mgcgz5qhsdxw4fgpqzqeafmkq:
+    resolution:
+      {
+        integrity: sha512-R9DhajPwJnR/lsF2hZ8cN8uqr5CVITsRrCG1AF5+ufcaybKYOvnH8sH9MaH4/hpkps3PQ9H71S7J7SPYixAYzQ==,
+      }
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: ">=16.0.0"
+      react-dom: ">=16.0.0"
+    dependencies:
+      next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
 
   /next/12.1.6_ef5jwxihqo6n7gxfmzogljlgcm:
     resolution:
