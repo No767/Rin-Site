@@ -7,6 +7,7 @@ import { FaWrench } from "react-icons/fa";
 
 import { MdOutlineCollections } from "react-icons/md";
 import { motion, Variants } from "framer-motion";
+import "../../styles/globals.css";
 
 const mainVariants: Variants = {
   offscreen: {

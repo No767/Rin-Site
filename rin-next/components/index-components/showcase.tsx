@@ -14,6 +14,7 @@ import { MdInfoOutline } from "react-icons/md";
 import { SiGithub, SiDiscord } from "react-icons/si";
 import { FiTerminal } from "react-icons/fi";
 import { motion } from "framer-motion";
+import "../../styles/globals.css";
 
 export const Showcase: FC = () => {
   return (
