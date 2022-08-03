@@ -1,9 +1,0 @@
-version: 2
-updates:
-  - package-ecosystem: "npm"
-    directory: "/Rin-Site-React"
-    schedule:
-      interval: "monthly"
-    commit-message:
-      prefix: "[npm/yarn]"
-      include: "scope"
