@@ -1,14 +1,14 @@
-import type { NextPage } from 'next'
-import NavBar from '../shared/shared-components/navbar'
-import IndexShowcase from '../shared/index-components/showcase'
+import type { NextPage } from "next";
+import NavBar from "../shared/shared-components/navbar";
+import IndexShowcase from "../shared/index-components/showcase";
 
 const Index: NextPage = () => {
   return (
     <div>
-      <NavBar/>
-      <IndexShowcase/>
+      <NavBar />
+      <IndexShowcase />
     </div>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
